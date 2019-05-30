@@ -9,3 +9,7 @@ based on fiap college classes
 
 1. `ng serve`
 2. navigate to `http://localhost:4200/`
+
+## Screenshot
+
+<img src="https://user-images.githubusercontent.com/27630941/58606256-1fec3580-8271-11e9-95e8-d381ab14a7fb.png"/>
