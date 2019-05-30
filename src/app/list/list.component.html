@@ -1,0 +1,29 @@
+<header>
+  <div class="container">
+    <h1>{{ title }}</h1>
+  </div>
+</header>
+
+<div class="container">
+  <div class="list">
+    <div *ngIf="!isLoad" class="list-loading">
+      <div class="list-loading-icon"></div>
+    </div>
+
+    <div class="list-item" *ngFor="let amiibo of amiibos | async">
+      <figure class="list-figure">
+        <img [src]="amiibo.image" [alt]="amiibo.name">
+      </figure>
+      <div class="list-description">
+        <h1>{{ amiibo.name }}</h1>
+        <p>
+          <span>Nome:</span> {{ amiibo.name }}<br>
+          <span>Série:</span> {{ amiibo.series }}<br>
+          <span>Game:</span> {{ amiibo.series }}<br>
+          <span>Lançamento:</span> {{ amiibo.release | release }}<br>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
